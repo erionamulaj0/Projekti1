@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!-- Fig. 7.14: increment.html --> 
+<!-- Preincrementing and Postincrementing. -->
+<html>
+ <head>
+ 	<meta charset= "utf-8">
+ 	<title>Preincrementing and Postincrementing</title> 
+ 	<script>
+
+ 		var c;
+
+ 		c = 5 ;
+ 		document.writeln( "<h3>Postincrementing</h3>" );
+ 		document.writeln("<p>" + c ); // prints 5
+ 		// prints 5 then increments
+ 		document.writeln( " " + c++ );
+ 		document.writeln( " " + c + "</p>" ); // prints 6
+
+ 		c = 5 ;
+ 		document.writeln("<h3>Preincrementing</h3>" ); 
+ 		document.writeln( "<p>" + c); // prints 5
+ 		// increments then prints 6 
+ 		document.writeln(" " + ++c);
+ 		document.writeln(" " + c + "</p>" ); // prints 6
+
+ 	</script>
+ </head><body></body>
+</html>

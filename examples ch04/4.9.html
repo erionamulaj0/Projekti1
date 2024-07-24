@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--Fig. 4.9: positioning.html -->
+<!--Absolute positioning of elements.-->
+<html>
+ <head>
+ 	<meta charset="utf-8">
+	<title>Absolute Positioning</title>
+	<style type="text/css">
+		.background_image {position: absolute;
+		                   top: 25px;
+		                   left: 400px;
+		                   z-index:1; }
+		.foreground_image {position: absolute;
+		                   top: 0px;
+		                   left: 0px
+		                    z-index:2;}
+		.text             {position: absolute;
+		                   top: 300px;
+		                   left: 450px;
+		                   z-index: 3;
+		                   font-size: 50pt;
+		                   font-family: tahoma,geneva,sans-serif;}
+	</style>	                                     
+ </head>
+ <body>
+ 	<p><img src="universum.png" class="background_image"
+ 		alt="First positioned image"/></p>
+
+ 	<p><img src="background.jpg"class="foreground_image"
+ 	    alt="Second positioned image"/></p>	
+
+ 	<p class="text">Kolegji Universum</p> 
+ </body>
+</html>

@@ -1,0 +1,57 @@
+<IDOCTYPE html>
+
+<!-- Fig. 5.18: mediaqueries.html --> 
+<!-- Using media queries to reformat a page based on the device width. --> 
+<html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<title>Media Queries</title>
+ 	<style type = "text/css">
+ 		p
+ 		{margin: 0.9cm 0em; } 
+ 		/*styles for smartphones with screen widths 480px or smaller */
+ 		 @media handheld and (max-width: 480px), 
+ 		    screen and (max-device-width: 480px),
+ 		    screen and (max-width: 480px)
+ 		{
+ 			div {
+ 				-webkit-column-count: 1; 
+ 				column-count: 1; }
+ 		}
+ 		/* styles for devices with screen widths of 481px to 1024px */ 
+ 		@media only screen and (min-width: 481px) and 
+ 		   (max-width: 1024px)
+ 		{
+ 			div {
+ 				-webkit-column-count: 2; 
+ 				column-count: 2;
+ 				-webkit-column-gap: 30px;
+ 				column-gap: 30px;
+ 				-webkit-column-rule: 1px outset black;
+ 				column-rule: 1px outset black; }
+ 		}
+ 		/*styles for devices with screen widths of 1025px or greater */
+ 		 @media only screen and (min-width: 1025px)
+ 		{
+ 		 	div {
+ 		 		-webkit-column-count: 3;
+ 		 		column-count: 3;
+ 		 		-webkit-column-gap:30px;
+ 		 		column-gap: 30px; 
+ 		 		-webkit-column-rule: 1px outset black;
+ 		 		column-rule: 1px outset black; }
+ 		}
+ 	</style>
+ </head>
+ <body>
+ 	<header>
+ 		<h1>Computers,Hardware and Software</h1>
+ 	</header>
+ 	<div>
+ 		<p>Kompjuteri (lat. computere - mbledh, njehsoj) është një pajisje elektronike që ruan dhe përpunon të dhënat sipas një liste udhëzuese. Kompjuter quajmë një mekanizëm të automatizuar i cili transformon një njësi impulsive (quajtur informacion, të dhëna në hyrje) në një tjetër ose krijon një njësi të re (quajtur e dhënë, informacion në dalje).Funksionimi i kompjuterit është rezultat i një kombinimi të mirfilltë efektiv midis elementeve harduerik dhe atyre softuerik.Kompjuterët hasen në madhësi dhe fuqi të ndryshme, duke filluar nga superkompjuterat që i përdor ushtria ose NASA, pastaj kompjuterat personal të cilët na rrethojnë vazhdimisht, e deri te kompjuterat e dorës që janë sa madhësia e një çokollate.</p>
+ 		<p>Harduer përfshin çdo pajisje që është e lidhur në kompjuterin dhe që kontrollohet nga mikroprocesori. Kjo përfshin pajisjen që është lidhur në kompjuterin kur ai u prodhua, si edhe pajisjen periferike e cila shtohet pastaj.Pajisjet mund të lidhen në kompjuterin në disa mënyra të ndryshme. Disa pajisje, si përshtatësit e rrjetit dhe kartat e zërit, janë lidhur në çarjet e zgjerimit brenda kompjuterit. Pajisjet e tjera, si printerët dhe skanerët, janë lidhur në porta jashtë kompjuterit.</p>
+ 		<p>Softueri quhet bashkësia e programeve kompjuterike dhe të dhënat e tjera që përmbajnë instruksione që i thonë kompjuterit se çfarë duhet të bëjë. Gjithashtu mund të themi se softueri i referohet një apo më shumë programeve kompjtuerike dhe të dhënave të ruajtura në memorien e kompjuterit për arsye të caktuara. Programet softuerike kryjenë funksionin e programit ose duke i dhënë instruksione të drejtëpërdrejta harduerit të kompjuterit ose duke shërbyer si input për programe të tjera.Termi softuer ka lindur si kontrasit i termit të vjetër harduer (që do të thotë pajisje fizike). Ndryshe nga hardueri, softueri nuk preket ose të shikohet fizikisht.</p>
+ 		<p>Njësia qendrore e përpunimit ose shkurt CPU, është pjesë e një sistemi kompjuterik i cili kryen udhëzimet e një programi kompjuterik, dhe është një element parësor në ushtrimin e funksioneve kompjuterike.Ky term ka qenë në përdorim në industrinë e kompjuterëve të paktën që prej fillimit të viteve 1960.Forma, hartimi dhe zbatimi i CPU kanë ndryshuar në mënyrë dramatike që nga shembujt më të hershme, por operacioni i tyre themelor mbetet i njëjtë.Veprimet e tij janë të caktuara nga një program me kodin e makinës. Detyrat kryesore të tij janë operacionet aritmetike, leximi dhe shkrimi i të dhënave në regjistrin e punës (kujtesa RAM) si zbatimin e urdhëresave në Programe. </p>
+ 	</div>
+ </body>
+</html>

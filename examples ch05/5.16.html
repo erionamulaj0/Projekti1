@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.16: fb1m.html --> 
+<!-- Flexible Box Layout Module. --> 
+<html>
+ <head>
+ 	<meta charset="utf-8"> 
+ 	<title>Flexible Box Layout Model</title> 
+ 	<link href='http://fonts.googleapis.com/css?family-Rosaric'
+ 	   rel='stylesheet' type='text/css'> 
+ 	<style type = "text/css">
+ 	.flexbox
+ 	{
+ 		width: 600px; 
+ 		height: 420px;
+ 		display: -webkit-box;
+ 		display: box;
+ 		-webkit-box-orient: horizontal; 
+ 		box-orient: horizontal;
+    }
+    .flexbox > div
+    {
+    	-webkit-transition: 1s ease-out;
+    	transition: 1s ease-out;
+    	-webkit-border-radius: 10px;
+    	border-radius: 10px;
+    	border: 2px solid black;
+    	width: 120px;
+    	margin: 10px -10px 10px 0px;
+    	padding: 20px 20px 20px 20px;
+    	box-shadow: 10px 10px 10px dimgrey;
+    }
+    .flexbox > div:nth-child(1) {background-color: lightgrey;}
+    .flexbox > div:nth-child(2) {background-color: lightgrey;}
+    .flexbox > div:nth-child(3) {background-color: lightgrey;}
+    .flexbox > div:nth-child(4) {background-color: lightgrey;}
+
+    .flexbox > div: hover { 
+    	width: 200px; color: white; font-weight: bold; }
+    .flexbox > div:nth-child(1):hover { background-color: royalblue;}
+    .flexbox > div:nth-child(2):hover { background-color: crimson; }
+    .flexbox > div:nth-child(3):hover { background-color: crimson; }
+    .flexbox > div:nth-child(4):hover {background-color: darkgreen;}
+    p { height: 250px; overflow: hidden; font-family: "Rosario" }
+    </style>
+ </head>
+ <body>
+ 	<div class="flexbox">
+ 	<div><img src="skenderbeu.jpeg" alt="Gjergj Kastrioti-Skënderbeu" width="70" height="100"> 
+ 	<p style="overflow: scroll;">Gjergj Kastrioti (l. 1405 – v. 17 janar 1468), i njohur si Skënderbeu,ishte një feudal dhe udhëheqës ushtarak arbër që në fillesë luftoi për Perandorinë Osmane dhe më pas drejtoi një kryengritje kundër saj.Gjergj Kastrioti ishte djali më i vogël i Gjon Kastriotit dhe i princeshës Vojsava, fëmija i fundit midis 4 djemve dhe 5 vajzave.Në vitin 1443 trupat hungareze të komanduara nga Janosh Huniadi u futën në thellësi të Ballkanit dhe në nëntor u ndeshën me ushtrinë osmane duke e thyer. Këtë rast e shfrytëzoi Gjergj Kastrioti Skënderbeu për tu kthyer në atdhe. Pasi çliroi Krujën me 28 nëntor 1443 ngriti flamurin e Kastriotëve, flamur të kuq me shqiponjë të zezë dykrenore.</p></div> 
+ 	<div><img src= "ademjashari.jpeg" alt= "Adem Jashari" width="70" height="100">
+ 	<p style="overflow: scroll;">Adem Jashari (28 Nëntor 1955 – 7 Mars 1998)
+       ishte Kryekomandanti dhe themeluesi kryesor i Ushtrisë Çlirimtare të Kosovës (UÇK-së). Lindi më 28 nëntor 1955 në fshatin Prekaz të Poshtëm të Drenicës, në Kosovë dhe ra dëshmorë më 7 mars 1998 në të njëjtin fshat, gjatë Sulmit në Prekaz. Pas vdekjes iu dha Urdhëri Hero i Kosovës.Së bashku me vëllain e tij Hamzën dhe baban Shabanin, Adem Jashari ka marrë pjesë në sulmet kundër forcave policore-ushtarake jugosllave. Forcat policore jugosllave dhe Ushtria Jugosllave e sulmuan shtëpinë e tij në mars të vitit 1998, ku Adem Jashari ra heroikisht sëbashku me 59 anëtarët e familjes së tij. Ky është rast unikat në historinë e luftërave. Ai njihet si "Komandanti Legjendar i UÇK-së". </p></div>
+    <div><img src = "shotaazemi.jpg" alt= "Azem e Shotë Galica" width="70" height="100"> 
+    <p style="overflow: scroll;">Azem Bejta (Galicë, 10 dhjetor 1889 – Junik, 15 korrik 1924) i njohur sipas zakonit, prej fshatit nga vinte si Azem Galica ka qenë luftëtar revolucionar shqiptar dhe udhëheqës i Lëvizjes Kaçake që luftoi për bashkimin e trojeve shqiptare.Luftëtar i shquar popullor për çlirim e bashkim kombëtar, për një regjim shtetëror demokratik në Shqipëri, organizator i lëvizjes së armatosur në Kosovë kundër pushtuesve të ndryshëm gjatë viteve 1912 - 1924. Vdiq më 25/26 korrik 1924 në moshën 35 vjeçae. Varri i tij në shpellën “Quku që kërset”, 75 metra i thellë, mbetet i fshehur 47 vjet në saje të betimit të shokëve.Shote Galica (Drenicë, 10 nëntor 1895 – Fushë-Krujë, 1 korrik 1927) e njohur me emrin e lindjes si Qerime Radisheva, ishte një luftëtare shqiptare kaçake. Ajo është shpallur Heroinë e Popullit Shqiptarë.Shote Galica ishte një legjendë virtuale në kohën e saj. Ajo mbahet mend për thënien "Jeta pa dije është si një luftë pa armë". Pa përfillur terrorin e armikut dhe ligjet e ashpra të fesë e të kanunit luftoi heroikisht për 12 vjet me radhë kundër pushtuesve serbë, austrohungarezë dhe bullgarë.</p></div>
+    <div><img src="ismailqemali.png" alt="Ismail Qemali" width="70" height="100">
+    <p style="overflow: scroll;">Ismail Bej Qemal Vlora i njohur thjesht si Ismail Qemali (
+    Vlorë, 24 janar 1844 – Peruxhia, 26 janar 1919) ishte një diplomat, politikan, rilindas shqiptar, burrë shteti dhe deputet i Perandorisë Osmane, veprimtar i çështjes kombëtare dhe themelues i shtetit shqiptar. Ismail Qemali ishte autori kryesor i Deklaratës së Pavarësisë dhe më pas shërbeu si Kryeministri i parë dhe Ministri i Jashtëm i Qeverisë së Përkohshme të Shqipërisë nga 1912 deri në 1914.Ngriti flamurin e kuq me dy krena në Vlorë me 28 nëntor 1912.
+    </p></div>
+  </div>
+ </body>
+</html>

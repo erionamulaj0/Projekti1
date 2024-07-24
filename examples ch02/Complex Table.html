@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.13: table2.html -->
+<!-- Complex HTML5 table. -->
+<html>
+ <head>
+ 	<meta charset="utf-8">
+	<title>Tables</title>
+ </head>
+
+ <body>
+ 	<h1>Table Example: Spanning Rows and Columns</h1>
+
+ 	<table border="1">
+ 		<caption>A more complex sample table</caption>
+
+ 		<thead>
+ 			<!-- rowspans and colspans merge the specified -->
+ 			<!-- number of cells veritcally or horizontally -->
+ 			<tr>
+ 				<!-- merge two rows -->
+ 				<th rowspan="2">
+ 					<img src="lizard.jpg" width="205"
+ 					height="167" alt="Picture of Lizard">
+ 				</th>
+
+ 				<!--merge three columns --->
+ 				<th colspan="3">
+ 					<strong>Lizard and salamanders comparison</strong><br>
+
+ 				</th>	
+ 			</tr>
+ 			<tr>
+ 				<th> Cold-blooded?</th>
+ 				<th>Legs</th>
+ 				<th>Skin</th>
+ 			</tr>
+ 		</thead>
+ 		<tbody>
+ 			<tr>
+ 				<th>Lizard</th>
+ 				<td>Yes</td>
+ 				<td>Claws on their feet</td>
+ 				<td>Rough,scaly skin</td>
+ 			</tr>
+ 			<tr>
+ 				<th>Salamanders</th>
+ 				<td>Yes</td>
+ 				<td>Don't have claws on their feet</td>
+ 				<td>Moist,non-scaly skin</td>
+ 			</tr>
+ 		</tbody>
+    </body>
+</html>
